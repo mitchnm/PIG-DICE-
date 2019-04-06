@@ -10,3 +10,14 @@ $(document).ready(function () {
     $("#outputTwo").text("DICE ROLL: " + randomNO2);
   });
 });
+
+
+
+
+
+$(document).ready(function () {
+  $("#names").click(() => {
+    var nameOne = document.getElementById(playerOne);
+    $("#player1").text("PLAYER ONE: " + nameOne);
+  });
+});

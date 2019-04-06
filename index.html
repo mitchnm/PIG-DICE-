@@ -13,10 +13,13 @@
 </head>
 
 <body>
+    <div style="float:left;">
+        <img src="photo3.gif" alt="pig">
+      </div>
   <div class="container">
-    <span style="text-align: center">
-    <h1><u><strong>PIG DICE.</strong></u></h1>
-    </span></br>
+      <div style="text-align:center;">
+    <h1><u><strong>PIG DICE.</strong></u></h1></br>
+    </div>
     <div style="text-align: center">
       <h2><u>Instructions:</u></h2>
       <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</br>
@@ -33,12 +36,12 @@
         which he chooses to hold, and adds his turn total of 22 points to his score.</p></br>
       <input type="text" placeholder="PLAYER 1:" id="playerOne"></br></br>
       <input type="text" placeholder="PLAYER 2:" id="playerTwo"></br></br>
-      <input type="button" value="START!">
+      <input type="button" value="START!" id="names">
     </div></br>
     <div class="row">
       <div class="col-md-4">
         <div class="well">
-          <h3>PLAYER ONE:</h3></br>
+          <h3 id="player1">PLAYER ONE:</h3></br>
           <span id="outputOne"><h4>DICE ROLL:</h4></span>
           <h5>Total score:</h5>
           <input type="button" value="ROLL" id="rollOne">
