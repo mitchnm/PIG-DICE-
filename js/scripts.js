@@ -12,12 +12,3 @@ $(document).ready(function () {
 });
 
 
-
-
-
-$(document).ready(function () {
-  $("#names").click(() => {
-    var nameOne = document.getElementById(playerOne);
-    $("#player1").text("PLAYER ONE: " + nameOne);
-  });
-});
