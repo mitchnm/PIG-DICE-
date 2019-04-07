@@ -1,3 +1,12 @@
+$("input:text#playerOne").ready(function () {
+  $("#START").click(() => {
+    var nameOne = $("input:text#playerOne").val();
+    $("#player1").text("PLAYER ONE: " + nameOne);
+
+    var nameTwo = $("input:text#playerTwo").val();
+    $("#player2").text("PLAYER TWO: " + nameTwo);
+  });
+});
 
 
 
