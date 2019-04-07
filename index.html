@@ -14,8 +14,10 @@
 
 <body>
   <div class="container">
+    <div class="jumbotron">
       <div style="text-align:center;">
-    <h1><u><strong>PIG DICE.</strong></u></h1></br>
+        <h1><u><strong>PIG DICE.</strong></u></h1></br>
+      </div>
     </div>
     <div style="text-align: center">
       <h2><u>Instructions:</u></h2>
@@ -27,33 +29,43 @@
         turn.</br>
         *The first player to score 100 or more points wins.</br>
 
-        For example, the first player, Anne, begins a turn with a roll of 5. Anne could hold and score 5 points, but
-        chooses to roll again. Anne rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again.
-        Anne rolls a 1, and must end her turn without scoring. The next player, Bob, rolls the sequence 4-5-3-5-5, after
+        For example, the first player, Mjengo, begins a turn with a roll of 5. Mjengo could hold and score 5 points, but
+        chooses to roll again. Mjengo rolls a 2, and could hold with a turn total of 7 points, but chooses to roll
+        again.
+        Mjengo rolls a 1, and must end her turn without scoring. The next player, Mnyambizi, rolls the sequence
+        4-5-3-5-5, after
         which he chooses to hold, and adds his turn total of 22 points to his score.</p></br>
       <input type="text" placeholder="PLAYER 1:" id="playerOne"></br></br>
       <input type="text" placeholder="PLAYER 2:" id="playerTwo"></br></br>
-      <input type="button" value="START!" id="names">
+      <input type="button" value="START" id="START">
     </div></br>
     <div class="row">
       <div class="col-md-5">
         <div class="well">
           <h2 id="player1">PLAYER ONE:</h2></br>
-          <span id="outputOne"><h4>DICE ROLL:</h4></span></br>
-          <span id="roundOne"><h4>ROUND TOTAL:</h4></span>
+          <span id="outputOne">
+            <h4>DICE ROLL:</h4>
+          </span></br>
+          <span id="roundOne">
+            <h4>ROUND TOTAL:</h4>
+          </span>
           <h3>Total score:</h3>
           <input type="button" value="ROLL" id="rollOne">
           <input type="button" value="HOLD" id="holdOne">
         </div>
       </div>
       <div class="col-md-2">
-          <img src="photo3.gif" alt="pig">
+        <img src="photo3.gif" alt="pig">
       </div>
       <div class="col-md-5">
         <div class="well">
-          <h2>PLAYER TWO:</h2></br>
-          <span id="outputTwo"><h4>DICE ROLL:</h4></span>
-          <span id="roundTwo"><h4>ROUND TOTAL:</h4></span>
+          <h2 id="player2">PLAYER TWO:</h2></br>
+          <span id="outputTwo">
+            <h4>DICE ROLL:</h4>
+          </span><br>
+          <span id="roundTwo">
+            <h4>ROUND TOTAL:</h4>
+          </span>
           <h3>Total score:</h3>
           <input type="button" value="ROLL" id="rollTwo">
           <input type="button" value="HOLD" id="holdTwo">
