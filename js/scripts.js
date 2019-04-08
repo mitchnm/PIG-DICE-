@@ -1,3 +1,9 @@
+function player(name)  {
+  this.jina = name;
+}
+var nameOne = new player("")
+var nameTwo = new player("")
+
 $("input:text").ready(function () {
   $("#START").click(() => {
     var nameOne = $("input:text#playerOne").val();
@@ -10,7 +16,6 @@ $("input:text").ready(function () {
     $("#holdTwo").hide();
   });
 });
-
 
 
 var round1Total = 0
@@ -28,7 +33,7 @@ $(document).ready(function () {
 
     if (random1 === 1) {
       round1Total = 0;
-
+      alert("OOPS!YOU GOT ONE")
       $("#roundOne").text("ROUND TOTAL: " + round1Total);
       $("#rollOne").hide();
       $("#holdOne").hide();
@@ -50,6 +55,9 @@ $(document).ready(function () {
     $("#holdOne").hide();
     $("#rollTwo").show();
     $("#holdTwo").show();
+    if (totalScore1 === 100)  {
+      alert( "YOU WON!")
+    }
   });
 });
 
@@ -61,6 +69,7 @@ $(document).ready(function () {
 
     if (random2 === 1) {
       round2Total = 0;
+      alert("OOPS!YOU GOT ONE")
       $("#roundTwo").text("ROUND TOTAL: " + round2Total);
       $("#rollTwo").hide();
       $("#holdTwo").hide();
@@ -82,5 +91,9 @@ $(document).ready(function () {
     $("#holdTwo").hide();
     $("#rollOne").show();
     $("#holdOne").show();
+    if (totalScore2 === 100)  {
+      alert("YOU WON!")
+    }
   });
 });
+
