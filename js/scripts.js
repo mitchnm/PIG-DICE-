@@ -1,3 +1,4 @@
+//user interface
 function player(name)  {
   this.jina = name;
 }
@@ -17,7 +18,7 @@ $("input:text").ready(function () {
   });
 });
 
-
+//business logic
 var round1Total = 0
 var round2Total = 0
 var totalScore1 = 0
