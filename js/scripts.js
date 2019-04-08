@@ -5,17 +5,21 @@ $("input:text").ready(function () {
 
     var nameTwo = $("input:text#playerTwo").val();
     $("#player2").text("PLAYER TWO: " + nameTwo);
+
+    $("#rollTwo").hide();
+    $("#holdTwo").hide();
   });
 });
 
 
 
-var playerOne1 = []
-var playerTwo2 = []
 var round1Total = 0
 var round2Total = 0
 var totalScore1 = 0
 var totalScore2 = 0
+var hold1 = 0
+var hold2 = 0
+
 
 $(document).ready(function () {
   $("#rollOne").click(() => {
@@ -24,7 +28,12 @@ $(document).ready(function () {
 
     if (random1 === 1) {
       round1Total = 0;
+
       $("#roundOne").text("ROUND TOTAL: " + round1Total);
+      $("#rollOne").hide();
+      $("#holdOne").hide();
+      $("#rollTwo").show();
+      $("#holdTwo").show();
     } else {
       round1Total = random1 + round1Total;
       $("#roundOne").text("ROUND TOTAL: " + round1Total);
@@ -32,6 +41,17 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("#holdOne").click(() => {
+    hold1 = round1Total + totalScore1 + hold1;
+    round1Total = 0;
+    $("#total1Score").text("Total score: " + hold1);
+    $("#rollOne").hide();
+    $("#holdOne").hide();
+    $("#rollTwo").show();
+    $("#holdTwo").show();
+  });
+});
 
 
 $(document).ready(function () {
@@ -42,6 +62,10 @@ $(document).ready(function () {
     if (random2 === 1) {
       round2Total = 0;
       $("#roundTwo").text("ROUND TOTAL: " + round2Total);
+      $("#rollTwo").hide();
+      $("#holdTwo").hide();
+      $("#rollOne").show();
+      $("#holdOne").show();
     } else {
       round2Total = random2 + round2Total;
       $("#roundTwo").text("ROUND TOTAL: " + round2Total);
@@ -49,20 +73,3 @@ $(document).ready(function () {
   });
 });
 
-
-$(document).ready(function () {
-  $("#holdOne").click(() => {
-    var hold1 = round1Total + totalScore1;
-    round1Total = 0;
-    $("#total1Score").text("Total score: " + hold1);
-  });
-});
-
-
-$(document).ready(function () {
-  $("#holdTwo").click(() => {
-    var hold2 = round2Total + totalScore2;
-    round2Total = 0;
-    $("#total2Score").text("Total score: " + hold2);
-  });
-});

@@ -2,11 +2,11 @@
 #### {Current version-1.00  "06-04-2019"}
 #### By **MITCH MUHU**
 ## Description
-
+This is a game website called pigdice.It  
 ## Setup/Installation Requirements
 * You can clone the quiz-board by cloning this repository
 
-    
+    https://github.com/mitchnm/PIG-DICE-.git
 
 * After cloning the repository the quiz-board will install automatically.
 
