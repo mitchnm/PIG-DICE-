@@ -2,7 +2,7 @@
 #### {Current version-1.00  "06-04-2019"}
 #### By **MITCH MUHU**
 ## Description
-This is a game website called pigdice.It  
+This is a game website called pigdice. It is a two-player game which one uses a dice to accumulate points and the first player to reach 100 wins the round.
 ## Setup/Installation Requirements
 * You can clone the quiz-board by cloning this repository
 
