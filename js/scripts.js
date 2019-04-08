@@ -73,3 +73,14 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("#holdTwo").click(() => {
+    hold2 = round2Total + totalScore2 + hold2;
+    round2Total = 0;
+    $("#total2Score").text("Total score: " + hold2);
+    $("#rollTwo").hide();
+    $("#holdTwo").hide();
+    $("#rollOne").show();
+    $("#holdOne").show();
+  });
+});
